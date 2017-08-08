@@ -1,0 +1,77 @@
+Peoples:
+  - name: Mark
+    skills:
+      - js
+      - python
+    salary: 1500
+  - name: John
+    skills:
+      - js
+      - php
+      - mysql
+      - html
+    salary: 1200
+  - name: Justin
+    skills:
+      - marketing
+      - brand
+    salary: 1600
+  - name: Petya
+    skills:
+      - C++
+      - python
+      - postgresql
+    salary: 2500
+  - name: Vasya
+    skills:
+      - mysql
+      - postgresql
+    salary: 1500
+  - name: Stepan
+    skills:
+      - python
+      - php
+      - marketing
+    salary: 3500
+  - name: Vitalya
+    skills:
+      - C++
+      - postgresql
+      - python
+    salary: 3000
+  - name: Bryan
+    skills:
+      - php
+      - js
+      - marketing
+    salary: 1800
+  - name: Voldemar
+    skills:
+      - html
+      - js
+    salary: 1800
+Tasks:
+  - name: One
+    skills:
+      - python
+      - postgresql
+      - js
+      - marketing
+      - brand
+      - html
+  - name: Two
+    skills:
+      - php
+      - js
+      - mysql
+      - html
+      - brand
+  - name: Three
+    skills:
+      - C++
+      - python
+  - name: Four
+    skills:
+      - Java
+      - Oracle
+      - python

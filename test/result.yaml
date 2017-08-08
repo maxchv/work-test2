@@ -1,0 +1,29 @@
+Tasks:
+  - name: One
+    teams:
+      - peoples:
+          - Vasya
+          - Petya
+        price: 4000
+      - peoples:
+          - Vitalya
+          - Bryan
+        price: 4800
+  - name: Two
+    teams:
+      - peoples:
+          - Voldemar
+          - John
+        price: 3000
+      - peoples:
+          - Vitalya
+          - Justin
+        price: 4600
+  - name: Three
+    teams:
+      - peoples:
+          - Vasya
+          - Petya
+        price: 4000
+  - name: Four
+    teams:
