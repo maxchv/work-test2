@@ -4,7 +4,14 @@ import sys
 import getopt
 
 
-class Task(object):
+class Base(object):
+
+    @classmethod
+    def make_list(cls, data):
+        return [cls(**kwargs) for kwargs in data]
+
+
+class Task(Base):
     """
     Represents the task with name and needed skills
     
@@ -44,8 +51,8 @@ class Task(object):
     def teams(self):
         return self.__teams
 
-    @staticmethod
-    def make_tasks(data):
+    @classmethod
+    def make_tasks(cls, data):
         """
         Makes list of tasks
         
@@ -82,7 +89,7 @@ class Task(object):
         >>> tasks[3].skills
         ['Java', 'Oracle', 'python']
         """
-        return [Task(**kwargs) for kwargs in data.get('Tasks')]
+        return cls.make_list(data.get("Tasks"))
 
     def to_dict(self):
         return {'name': self.name,
@@ -185,7 +192,7 @@ class Task(object):
         return self.__str__()
 
 
-class Person(object):
+class Person(Base):
     """
     Represents the person that has name, salary and skills
     
@@ -229,8 +236,8 @@ class Person(object):
     def skills(self):
         return self.__skills
 
-    @staticmethod
-    def make_people(data):
+    @classmethod
+    def make_people(cls, data):
         """
         Makes list of people
 
@@ -268,7 +275,7 @@ class Person(object):
         >>> people[8].skills
         ['html', 'js']
         """
-        return [Person(**kwargs) for kwargs in data.get('Peoples')]
+        return cls.make_list(data.get("Peoples"))
 
     def __gt__(self, other):
         return self.name > other.name
